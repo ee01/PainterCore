@@ -1,6 +1,7 @@
-import Pen, { penCache, clearPenCache } from './lib/pen';
-import Downloader from './lib/downloader';
-import WxCanvas from './lib/wx-canvas';
+const { Painter, penCache, clearPenCache } = require('./lib/pen');
+const Pen = Painter;
+const Downloader = require('./lib/downloader');
+const WxCanvas = require('./lib/wx-canvas');
 
 const util = require('./lib/util');
 const calc = require('./lib/calc');
